@@ -1,0 +1,13 @@
+package com.krakedev;
+
+public class TestAuto {
+
+	public static void main(String[] args) {
+		
+		// Intanciando de la clase
+		Auto auto1 = new Auto("Mazda", 1989, 5500);
+		Auto auto2 = new Auto("Renault", 2002, 4500);
+
+	}
+
+}

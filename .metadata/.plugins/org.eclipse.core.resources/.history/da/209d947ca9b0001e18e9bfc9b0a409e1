@@ -35,8 +35,8 @@ public class TestPersona {
 		
 		
 		System.out.println("***********");
-		System.out.println("p.nombre: " + p.nombre);
-		System.out.println("p2.nombre: " + p2.nombre);
+		System.out.println("Nombre: " + p.nombre);
+		System.out.println("Nombre: " + p2.nombre);
 		
 		
 		
