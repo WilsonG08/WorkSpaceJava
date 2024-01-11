@@ -1,0 +1,17 @@
+package com.krakedev;
+
+/*
+ * 
+ * Comentario de varias lineas
+ * */
+
+public class TestPersona {
+
+	public static void main(String[] args) {
+		// 1.- Creo una variable de tipo Persona
+		Persona p;
+		
+
+	}
+
+}
