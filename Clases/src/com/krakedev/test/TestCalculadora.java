@@ -1,4 +1,6 @@
-package com.krakedev;
+package com.krakedev.test;
+
+import com.krakedev.Calculadora;
 
 public class TestCalculadora {
 
@@ -15,7 +17,7 @@ public class TestCalculadora {
 		Calculadora calcu;
 		
 		// Instancia del objeto
-		calcu = new Calculadora();
+		calcu = new Calculadora();							
 		
 		// Invoca al metodo
 		resultadoSuma = calcu.sumar(5, 3);
