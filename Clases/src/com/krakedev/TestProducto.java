@@ -3,47 +3,55 @@ package com.krakedev;
 public class TestProducto {
 
 	public static void main(String[] args) {
-
 		// Creacion de las 3 Variables
-		Producto productoA = new Producto();
-		Producto productoB = new Producto();
-		Producto productoC = new Producto();
+		Producto productoA;
+		Producto productoB;
+		Producto productoC;
 
-		// Modificacion de los valores Producto A
-		productoA.nombre = "Tempra";
-		productoA.descripcion = "Pastilla";
-		productoA.precio = 0.35;
-		productoA.stockActual = 20;
+		// Instancia de los tres objetos
+		productoA = new Producto();
+		productoB = new Producto();
+		productoC = new Producto();
 
-		// Modificacion de los valores Producto A
-		productoB.nombre = "Inyeccion";
-		productoB.descripcion = "Pinchar";
-		productoB.precio = 0.10;
-		productoB.stockActual = 50;
+		// Modificacion de los atributos del producto 1
+		productoA.setNombre("Presevativos DUO");
+		productoA.setDescripcion("Es un prodcuto para caballeros");
+		productoA.setPrecio(2.50);
+		productoA.setStockActual(50);
 
-		// Modificacion de los valores Producto A
-		productoC.nombre = "Preservativos";
-		productoC.descripcion = "Hombre";
-		productoC.precio = 1.00;
-		productoC.stockActual = 45;
+		// Modificacion de los atributos del producto 2
+		productoB.setNombre("Paracetamol");
+		productoB.setDescripcion("Aliviar dolor y bajar la fiebre");
+		productoB.setPrecio(1.50);
+		productoB.setStockActual(25);
 
-		System.out.println("PRODUCTO A ");
-		System.out.println("Nombre : " + productoA.nombre);
-		System.out.println("Descripcion : " + productoA.descripcion);
-		System.out.println("Precio : " + productoA.precio);
-		System.out.println("Stock : " + productoA.stockActual + "\n");
+		// Modificacion de los atributos del producto 3
+		productoC.setNombre("Cepillo de dientes");
+		productoC.setDescripcion("Es para cepillarse los dientes");
+		productoC.setPrecio(1.00);
+		productoC.setStockActual(10);
 
-		System.out.println("PRODUCTO B");
-		System.out.println("Nombre : " + productoB.nombre);
-		System.out.println("Descripcion : " + productoB.descripcion);
-		System.out.println("Precio : " + productoB.precio);
-		System.out.println("Stock : " + productoB.stockActual + "\n");
+		// Mostrar los valores del producto 1
+		System.out.println("Nombre del producto 1: " + productoA.getNombre());
+		System.out.println("Descripcion del producto 1: " + productoA.getDescripcion());
+		System.out.println("Precio del producto 1: " + productoA.getPrecio());
+		System.out.println("Stock actual del producto 1: " + productoA.getStockActual());
 
-		System.out.println("PRODUCTO C");
-		System.out.println("Nombre : " + productoC.nombre);
-		System.out.println("Descripcion : " + productoC.descripcion);
-		System.out.println("Precio : " + productoC.precio);
-		System.out.println("Stock : " + productoC.stockActual);
+		System.out.println("==================================");
+
+		// Mostrar los valores del producto 2
+		System.out.println("Nombre del producto 2: " + productoB.getNombre());
+		System.out.println("Descripcion del producto 2: " + productoB.getDescripcion());
+		System.out.println("Precio del producto 2: " + productoB.getPrecio());
+		System.out.println("Stock actual del producto 2: " + productoB.getStockActual());
+		System.out.println("==================================");
+
+		// Mostrar los valores del producto 3
+		System.out.println("Nombre del producto 3: " + productoC.getNombre());
+		System.out.println("Descripcion del producto 3: " + productoC.getDescripcion());
+		System.out.println("Precio del producto 3: " + productoC.getPrecio());
+		System.out.println("Stock actual del producto 3: " + productoC.getStockActual());
+
 	}
 
 }

@@ -6,8 +6,8 @@ public class Mensajeria {
 	public void saludar() {
 		System.out.println("Hola HUMANOS");
 	}
-	
-	// No retorna pero recibe parametros 
+
+	// No retorna pero recibe parametros
 	public void saludarAmigos(String nombre, String apellido) {
 		System.out.println("Hola " + nombre + " " + apellido);
 	}

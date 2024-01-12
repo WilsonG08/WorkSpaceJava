@@ -1,45 +1,46 @@
 package com.krakedev;
 
-/*
- * 
- * Comentario de varias lineas
- * */
-
 public class TestPersona {
 
+	// Esto es un comentatio
+	/*
+	 * Comentario de varios lineas
+	 * 
+	 */
 	public static void main(String[] args) {
-		// 1.- Creo una variable de tipo Persona
-		Persona p;	
+		Persona p; // 1. Declaro una variable p de tipo de Persona
+		// Declaro e instacion en la misma linea
 		Persona p2 = new Persona();
-		
-		// 2.- Instanciar o crear ub objeto Persona y se lo referencia a p
-		p = new Persona();
-		
-		// 3.- Accedo a los atributos
-		System.out.println("Nombre: " + p.nombre);
-		System.out.println("Edad: " + p.edad);
-		System.out.println("Estatura: " + p.estatura);
-		
-		// 4.- Modificar los atributos
-		p.nombre = "Mario";
-		p.edad = 45;
-		p.estatura = 1.56;
-		
-		System.out.println("---------------------------");
-		// 5.- Accedo a los atributos
-		System.out.println("Nombre: " + p.nombre);
-		System.out.println("Edad: " + p.edad);
-		System.out.println("Estatura: " + p.estatura);
-		
-		p2.nombre = "Angelina";
-		
-		
-		System.out.println("***********");
-		System.out.println("p.nombre: " + p.nombre);
-		System.out.println("p2.nombre: " + p2.nombre);
-		
-		
-		
+		Persona p4 = new Persona("Anngela", 22, 1.60);
+
+		System.out.println("nombre: " + p4.getNombre());
+		System.out.println("edad: " + p4.getEdad());
+		System.out.println("estatura: " + p4.getEstatura());
+
+		p = new Persona(); // 2. Instanciar (crear) un objeto Persona, referencias con p
+
+		// 3. Accedo a los atributos, leo sus valores y los imprimo en la consola
+		System.out.println("nombre: " + p.getNombre());
+		System.out.println("edad: " + p.getEdad());
+		System.out.println("estatura: " + p.getEstatura());
+
+		// 4. Modificar los atributos
+		p.setNombre("Mario");
+		p.setEdad(45);
+		p.setEstatura(1.56);
+
+		System.out.println("--------------------");
+
+		// 5. Accedo a los atributos
+		System.out.println("nombre: " + p.getNombre());
+		System.out.println("edad: " + p.getEdad());
+		System.out.println("estatura: " + p.getEstatura());
+
+		p2.setNombre("Anngela");
+
+		System.out.println("*******************");
+		System.out.println("p.nombre : " + p.getNombre());
+		System.out.println("p2.nombre : " + p2.getNombre());
 
 	}
 
