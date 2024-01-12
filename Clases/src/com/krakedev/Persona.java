@@ -9,10 +9,12 @@ public class Persona {
 	public Persona() {
 	}
 
+	// Constructor
 	public Persona(String nombre) {
 		this.nombre = nombre;
 	}
 
+	// Constructor 1
 	public Persona(String nombre, int edad, double estatura) {
 		this.nombre = nombre;
 		this.edad = edad;

@@ -5,7 +5,7 @@ public class TestAuto {
 
 	public static void main(String[] args) {
 
-		// Intanciando de la clase
+		// Intanciando de la clase y constructor con parametros
 		Auto auto1 = new Auto("Mazda", 1989, 5500);
 		Auto auto2 = new Auto("Renault", 2002, 4500);
 		Auto auto3 = new Auto("Ninsan", 2023, 30000);

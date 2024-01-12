@@ -11,6 +11,8 @@ public class TestPersona {
 		Persona p; // 1. Declaro una variable p de tipo de Persona
 		// Declaro e instacion en la misma linea
 		Persona p2 = new Persona();
+		
+		// Constructor
 		Persona p4 = new Persona("Anngela", 22, 1.60);
 
 		System.out.println("nombre: " + p4.getNombre());

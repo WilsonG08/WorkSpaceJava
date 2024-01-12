@@ -6,6 +6,7 @@ public class Auto {
 	private int anio;
 	private float precio;
 
+	// Constructor
 	public Auto(String marca, int anio, float precio) {
 		this.marca = marca;
 		this.anio = anio;
