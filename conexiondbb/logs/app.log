@@ -1,0 +1,22 @@
+21:52:55.332 [main] ERROR com.krakedev.persistencia.servicios.AdminPersonas - Error al insertar!
+org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «personas_pk»
+  Detail: Ya existe la llave (cedula)=(1718688286).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.krakedev.persistencia.servicios.AdminPersonas.insertar(AdminPersonas.java:41) [classes/:?]
+	at com.krakedev.persistencia.test.TestAdminPersona.main(TestAdminPersona.java:29) [classes/:?]
+12:42:18.906 [main] TRACE com.krakedev.persitencia.utils.Convertidor - Convirtiendo fecha: 2012/11/05
+12:42:18.932 [main] TRACE com.krakedev.persitencia.utils.Convertidor - Fecha convertida: Mon Nov 05 00:00:00 ECT 2012
+12:42:19.395 [main] DEBUG com.krakedev.persitencia.utils.ConexionBDD - Conexion exitosaaa!
+12:42:19.444 [main] ERROR com.krakedev.persistencia.servicios.AdminPersonas - Error de actualizacion
+12:46:30.331 [main] TRACE com.krakedev.persitencia.utils.Convertidor - Convirtiendo fecha: 2012/11/05
+12:46:30.354 [main] TRACE com.krakedev.persitencia.utils.Convertidor - Fecha convertida: Mon Nov 05 00:00:00 ECT 2012
+12:46:30.803 [main] DEBUG com.krakedev.persitencia.utils.ConexionBDD - Conexion exitosaaa!
+12:50:55.092 [main] DEBUG com.krakedev.persitencia.utils.ConexionBDD - Conexion exitosaaa!
+12:50:55.116 [main] ERROR com.krakedev.persistencia.servicios.AdminPersonas - Error de Eliminacion
+12:51:45.301 [main] DEBUG com.krakedev.persitencia.utils.ConexionBDD - Conexion exitosaaa!
